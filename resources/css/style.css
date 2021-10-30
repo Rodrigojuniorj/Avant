@@ -25,7 +25,7 @@ textarea{
 
 html,body{
 	height: 100%;
-	background-color: #FFFFFF;
+	background-color: #0B2636;
 }
 
 header{
@@ -68,9 +68,9 @@ nav.mobile ul{
 	position: absolute;
 	left: 0;
 	width: 100%;
-	padding: 70px 0 30px 0;
+	padding: 120px 0 30px 0;
 	top: 0;
-	background: #dd7732;
+	background: #0B2636;
 	display: none;
 	text-align: center;
 }
@@ -146,7 +146,7 @@ nav li.btn-nav{
   }
   .chamada__header p span.typed-text {
 	font-weight: bold;
-	color: #dd7732;
+	color: #077cc0;
   }
   .chamada__header p span.cursor {
 	display: inline-block;
@@ -201,7 +201,7 @@ section.descricao{
     font-weight: 700;
     color: #ebebee;
     display: inline-block;
-    background-color: #ff5f27;
+    background-color: #083c5a;
     border: 0;
     text-align: center;
     padding: 12px 30px;
@@ -213,7 +213,7 @@ section.descricao{
 }
 
 .descricao__wraper button:hover{
-    background-color: #ffcc65;
+    background-color: #057cc0;
 }
 
 .descricao__wraper img{
@@ -234,7 +234,7 @@ section.sobre{
 	padding: 100px 0 0 0;
 	min-height: 400px;
 	background-color: #ffffff;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .sobre__wraper{
@@ -246,8 +246,7 @@ section.sobre{
 }
 
 .sobre__wraper h1{
-	color: #ff5f27;
-
+	color: #083c5a;
 	font-size: 3rem;
 	text-align: left;
 }
@@ -289,16 +288,101 @@ section.sobre{
 
 /***** End SobreoEmpresa *****/
 
+/* Missão */
+
+section.missaoValor > .container{
+	max-width: 800px;
+}
+
+section.missaoValor{
+	padding-top: 30px;
+	background-color: rgba(0, 0, 0, 0.308);
+	min-height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+	color: #dfdfdf;
+}
+
+.missao-single{
+	padding-bottom: 80px;
+}
+
+.missao-single p{
+	margin-top: 15px;
+	font-weight: 200;
+	font-size: 1.3rem;
+}
+
+.missao-single h2{
+	margin-top: 15px;
+	font-size: 2.3rem;
+}
+
+/* Missão */
+
+/* parallax */
+section.parallax{
+	display: flex;
+	align-items:center ;
+	width: 100%;
+	min-height: 400px;
+	padding: 30px 4%;
+	text-align: justify;
+	background:  linear-gradient(
+		rgba(0,0,0,.8),rgba(0,0,0,.6)
+	  ),
+	  url('../img/foto2.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+section.parallax > .center{
+	max-width: 960px;
+	margin: 40px auto;
+	color: white;
+}
+
+section.parallax button{
+	font-size: 15px;
+	margin-left: 20%;
+	cursor: pointer;
+    font-weight: 700;
+    color: #ebebee;
+    display: inline-block;
+    background-color: #083c5a;
+    border: 0;
+    text-align: center;
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 35px;
+	margin-top: 30px;
+}
+
+section.parallax button:hover{
+    background-color: #057cc0;
+}
+
+section.parallax h2{
+	font-size: 3rem;
+	text-align: center;
+}
+
+/* parallax */
+
 /***** formulario *****/
 section.formulario{
 	padding: 80px 0;
-	background-color: #f5f5f5;
+	background-color: #dfdfdf;
 }
 
 section.formulario h2 {
 	text-align: center;
-	font-weight: normal;
+	font-weight: 700;
 	color: #31475e;
+	font-size: 2.5rem;
 }
 
 section.formulario p {
@@ -306,7 +390,7 @@ section.formulario p {
 	text-align: center;
 	padding: 20px;
 	line-height: 1.5rem;
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
 
@@ -350,12 +434,12 @@ section.formulario input[type=submit]{
 	margin-top: 10px;
 	color: white;
 	border: 0;
-	background-color: #ff5f27;
+	background-color: #083c5a;
 	box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
 }
 
 section.formulario input[type=submit]:hover{
-	background-color: #ffcc65;
+	background-color: #057cc0;
 }
 
 
@@ -369,7 +453,6 @@ footer{
 }
 
 footer > .container{
-	
 	max-width: 1280px;
 	display: flex;
 	flex-wrap: wrap;
@@ -383,13 +466,13 @@ footer > .container{
 
 .box-footer h2{
 	font-size: 22px;
-	color: #31475e;
+	color: #d6d6d6;
 	font-weight: normal;
 }
 
 .box-footer p{
 	margin-top: 10px;
-	color: #31475e;
+	color: #ececec;
 	font-weight: 300;
 	font-size: 15px;
 }
@@ -415,13 +498,13 @@ footer > .container{
 	cursor: pointer;
 	margin-top: 10px;
 	margin-left:30px;
-	color: #31475e;
+	color: #dfdfdf;
 	font-size: 2rem;
 }
 
 .box-footer svg:nth-of-type(2){
 	margin-left: 20px;
-	color: #31475e;
+	color: #dfdfdf;
 	font-size: 2rem;
 }
 
@@ -453,10 +536,13 @@ footer > .container{
 }
 @media screen and (max-width: 1150px) {
 	.sobre__wraper img{
-		width: 100%;
-		width: 400px;
+		position: relative;
+		margin: 0 60px;
+		width: 80%;
 	}
-	
+	.sobre__wraper .texto{
+		margin-top: 20px;
+	}
 	.w50{
 		width: 100%;
 	}
@@ -479,7 +565,7 @@ footer > .container{
 	}
 	.descricao__wraper button{
 		position: relative;
-		margin-left: 35%;
+		margin-left: 60px;
 		margin-bottom: 40px;
 	}
 	.sobre__wraper h1{
@@ -493,12 +579,7 @@ footer > .container{
 		font-size: 1rem;
 		padding: 0 4%;
 	}
-	.sobre__wraper img{
-		position: relative;
-		margin: 0 auto;
-		padding: 0 10%;
-		width: 100%;
-	}
+	
 	.sobre__wraper button{
 		position: relative;
 		margin-left: 35%;
@@ -514,8 +595,6 @@ footer > .container{
 		padding-bottom: 40px;
 	}
 
-	
-
 	nav.mobile{
 		display: block;
 	}
@@ -530,12 +609,34 @@ footer > .container{
 
 @media screen and (max-width: 585px) {
 	.descricao__wraper button{
-		margin-left: 30%;
+		margin-left: 36%;
 	}
 	.sobre__wraper button{
 		margin-left: 30%;
 	}
+	
+	.sobre__wraper img{
+		position: relative;
+		margin: 0 40px;
+		width: 80%;
+	}
 
+	
+	section.parallax button {
+		font-size: 15px;
+		margin-left: 10%;
+		cursor: pointer;
+		font-weight: 700;
+		color: #ebebee;
+		display: inline-block;
+		background-color: #083c5a;
+		border: 0;
+		text-align: center;
+		padding: 15px 25px;
+		position: relative;
+		border-radius: 35px;
+		margin-top: 30px;
+	}
 	
 }
 
