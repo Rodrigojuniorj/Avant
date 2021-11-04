@@ -170,8 +170,6 @@ nav li.btn-nav{
 /***** descricaoEmpresa *****/
 
 section.descricao{
-	display: flex;
-	flex-wrap: nowrap;
 	padding: 100px 0 0 0;
 	min-height: 400px;
 	background-color: #F6F6F6;
@@ -217,10 +215,8 @@ section.descricao{
 }
 
 .descricao__wraper img{
-
 	width: 100%;
-	max-width: 900px;
-	margin-left: 60px;
+	max-width: 700px;
 }
 
 /***** End descricaoEmpresa *****/
@@ -237,52 +233,38 @@ section.sobre{
 	padding-bottom: 50px;
 }
 
-.sobre__wraper{
+.sobre > .container{
 	display: flex;
+	align-content: space-between;
 	flex-wrap: wrap;
+	align-items: center;
+}
+
+.sobre__wraper{
+	width: 40%;
+	margin: 0 4%;
 }
 
 .sobre__wraper .texto{
+	text-align: left;
+	width: 100%;
 }
 
 .sobre__wraper h1{
-	color: #083c5a;
+	text-align: center;
 	font-size: 3rem;
-	text-align: left;
-}
-.sobre__wraper p{
-	max-width: 600px;
-	margin-top: 20px;
-	color: #60717B;
-	line-height: 2rem;
-	font-size: 1rem;
-}
-	
-.sobre__wraper button{
-	font-size: 15px;
-	cursor: pointer;
-    font-weight: 700;
-    color: #ebebee;
-    display: inline-block;
-    background-color: #ff5f27;
-    border: 0;
-    text-align: center;
-    padding: 12px 30px;
-    line-height: 1.5;
-    margin: 5px;
-    position: relative;
-    border-radius: 35px;
-	margin-top: 30px;
+	color: #083c5a;
 }
 
-.sobre__wraper button:hover{
-    background-color: #ffcc65;
+.sobre__wraper .texto p{
+	margin-top: 20px;
+	color: #60717B;
+	margin-left: 20px;
+	font-size: 1rem;
 }
 
 .sobre__wraper img{
-	margin-left: -100px;
 	width: 100%;
-	max-width: 500px;
 	border-radius: 20px;
 }
 
@@ -535,56 +517,63 @@ footer > .container{
 	
 }
 @media screen and (max-width: 1150px) {
-	.sobre__wraper img{
-		position: relative;
-		margin: 0 60px;
-		width: 80%;
+	
+	.sobre__wraper{
+		display: block;
+		width: 100%;
 	}
+
 	.sobre__wraper .texto{
-		margin-top: 20px;
+		width: 100%;
 	}
+	
+	.sobre__wraper h1{
+		margin-top: 20px;
+		font-size: 3rem;
+	}
+	
+	.sobre__wraper .texto p{
+		display: block;
+		position: relative;
+		margin: 20px 90px;
+		text-align: center;
+		max-width: 800px;
+		font-size: 1rem;
+	}
+	
+	.sobre__wraper img{
+		display: block;
+		position: relative;
+		margin-left: 25%;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	
+	.descricao__wraper img{
+		display: none;
+	}
+	
 	.w50{
 		width: 100%;
 	}
+
 	.descricao__wraper h1{
 		margin: 0 4%;
+		margin-bottom: 20px;
 		text-align: center;
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	.descricao__wraper p{
-		margin: 0 4%;
+		margin: auto;
 		text-align: center;
-		font-size: 1rem;
-		padding: 0 4%;
-	}
-	.descricao__wraper img{
-		position: relative;
-		margin: 0 auto;
-		padding: 0 10%;
-		width: 100%;
-	}
-	.descricao__wraper button{
-		position: relative;
-		margin-left: 60px;
-		margin-bottom: 40px;
-	}
-	.sobre__wraper h1{
-		margin: 0 4%;
-		text-align: center;
-		font-size: 1.5rem;
-	}
-	.sobre__wraper p{
-		margin: 0 4%;
-		text-align: center;
-		font-size: 1rem;
-		padding: 0 4%;
+		font-size: 1.2rem;
 	}
 	
-	.sobre__wraper button{
-		position: relative;
-		margin-left: 35%;
-		margin-bottom: 40px;
+	.descricao__wraper button{
+		margin: 20px auto;
+		display: flex;
 	}
+	
 }
 @media screen and (max-width: 1024px) {
 	nav.desktop{
@@ -620,26 +609,21 @@ footer > .container{
 		margin: 0 40px;
 		width: 80%;
 	}
-
 	
 	section.parallax button {
-		font-size: 15px;
-		margin-left: 10%;
-		cursor: pointer;
-		font-weight: 700;
-		color: #ebebee;
-		display: inline-block;
-		background-color: #083c5a;
-		border: 0;
-		text-align: center;
-		padding: 15px 25px;
-		position: relative;
-		border-radius: 35px;
-		margin-top: 30px;
+		margin-left: 17%;
 	}
 	
 }
 
+@media screen and (max-width: 380px) {
+	section.parallax button {
+		margin-left: 10%;
+	}
+	.box-footer svg{
+		margin-bottom: 20px;
+	}
+}
 @media screen and (max-width: 320px) {
 	.descricao__wraper button{
 		margin-left: 23%;
