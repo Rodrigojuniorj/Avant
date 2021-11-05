@@ -264,7 +264,7 @@ section.sobre{
 }
 
 .sobre__wraper img{
-	width: 100%;
+	max-width: 100%;
 	border-radius: 20px;
 }
 
@@ -622,6 +622,9 @@ footer > .container{
 	}
 	.box-footer svg{
 		margin-bottom: 20px;
+	}
+	.descricao__wraper button{
+		margin-left: 28%;
 	}
 }
 @media screen and (max-width: 320px) {
